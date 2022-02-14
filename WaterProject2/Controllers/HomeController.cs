@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WaterProject2.Models;
+using WaterProject2.Models.ViewModels;
 
 namespace WaterProject2.Controllers
 {
@@ -25,10 +26,26 @@ namespace WaterProject2.Controllers
             repo = temp;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int pageNum = 1)
         {
-            var blah = repo.Projects.ToList();
-            return View(blah);
+            int pageSize = 5;
+
+            var x = new ProjectsViewModel
+            {
+                Projects = repo.Projects
+                .OrderBy(p => p.ProjectName)
+                .Skip((pageNum - 1) * pageSize)
+                .Take(pageSize),
+
+                PageInfo = new PageInfo
+                {
+                    TotalNumProjects = repo.Projects.Count(),
+                    ProjectsPerPage = pageSize,
+                    CurrentPage = pageNum
+                }
+            };
+
+            return View(x);
         }
 
         // public IActionResult Index() => View();

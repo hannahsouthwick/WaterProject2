@@ -1,20 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    ViewBag.Calc = 20 / 5;
 }
-@model List<Project>
+@model ProjectsViewModel
 
+<h1>@ViewBag.Calc</h1>
 <div class="text-center">
     <h1>The Water Project</h1>
 </div>
-@foreach (Project p in Model)
-            {
-                <h3>@p.ProjectName</h3>
-                <ul>
-                    <li>Project Type: @p.ProjectType</li>
-                    <li>Regional Program: @p.ProjectRegionalProgram</li>
-                    <li>Impact: @p.ProjectImpact served</li>
-                    <li>Project Phase: @p.ProjectPhase</li>
-                    <li>Project Status: @p.ProjectFunctionalityStatus</li>
-                </ul>
-            }
-<br />
+@foreach (Project p in Model.Projects)
+{
+    <h3>@p.ProjectName</h3>
+    <ul>
+        <li>Project Type: @p.ProjectType</li>
+        <li>Regional Program: @p.ProjectRegionalProgram</li>
+        <li>Impact: @p.ProjectImpact served</li>
+        <li>Project Phase: @p.ProjectPhase</li>
+        <li>Project Status: @p.ProjectFunctionalityStatus</li>
+    </ul>
+    <br />
+}
+
+<div page-model="@Model.PageInfo"></div>
+
