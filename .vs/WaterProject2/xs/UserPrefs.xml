@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Startup.cs">
-    <Files>
-      <File FileName="WaterProject2/Startup.cs" Line="16" Column="44" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WaterProject2" expanded="True">
             <Node name="WaterProject2" expanded="True">
-              <Node name="Views" expanded="True" />
-              <Node name="WaterProject.sqlite" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

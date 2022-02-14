@@ -1,8 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model List<Project>
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>The Water Project</h1>
 </div>
+@foreach (Project p in Model)
+            {
+                <h3>@p.ProjectName</h3>
+                <ul>
+                    <li>Project Type: @p.ProjectType</li>
+                    <li>Regional Program: @p.ProjectRegionalProgram</li>
+                    <li>Impact: @p.ProjectImpact served</li>
+                    <li>Project Phase: @p.ProjectPhase</li>
+                    <li>Project Status: @p.ProjectFunctionalityStatus</li>
+                </ul>
+            }
+<br />
