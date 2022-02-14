@@ -8,10 +8,11 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using WaterProject2.Models.ViewModels;
 
 namespace WaterProject2.Infrastructure
 {
-    [HtmlTargetElement("div", Attributes = "page-model")]
+    [HtmlTargetElement("div", Attributes = "page-blah")]
     public class PaginationTagHelper : TagHelper
     {
         //dynamically create the page links for us
@@ -26,13 +27,28 @@ namespace WaterProject2.Infrastructure
         [HtmlAttributeNotBound]
         public ViewContext vc { get; set; }
 
+        //Different than the view context
+        public PageInfo PageBlah { get; set; }
+
+        public string PageAction { get; set; }
+
         public override void Process (TagHelperContext thc, TagHelperOutput tho)
         {
             IUrlHelper uh = uhf.GetUrlHelper(vc);
 
             TagBuilder final = new TagBuilder("div");
 
+            for (int i = 1; i < PageBlah.TotalPages; i++)
+            {
+                TagBuilder tb = new TagBuilder("a");
 
+                tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i });
+                tb.InnerHtml.Append(i.ToString());
+
+                final.InnerHtml.AppendHtml(tb);
+            }
+
+            tho.Content.AppendHtml(final.InnerHtml);
         }
     }
 }
