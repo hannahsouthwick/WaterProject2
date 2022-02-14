@@ -23,6 +23,7 @@ namespace WaterProject2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // tells asp.net to use the controller views setup and use the MVC pattern
             services.AddControllersWithViews();
         }
 
@@ -39,7 +40,8 @@ namespace WaterProject2
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+
+            //Corresponds to the wwroot
             app.UseStaticFiles();
 
             app.UseRouting();
