@@ -55,27 +55,22 @@ namespace WaterProject2
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             // changes here
             // endpoints run from top to bottom like if statements
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "typepage",
-                    pattern: "{projectType}/Page{pageNum}",
-                    defaults: new { Controller = "Home", action = "Index" });
+                endpoints.MapControllerRoute("typepage",
+                    "{projectType}/Page{pageNum}",
+                    new { Controller = "Home", action = "Index" });
 
-                endpoints.MapControllerRoute(
-                    name: "Paging",
+                endpoints.MapControllerRoute("Paging",
                     // interpretting what comes in and creating what comes out, literal "P"
-                    pattern: "Page{pageNum}",
-                    defaults: new { Controller = "Home", action = "Index", pageNum = 1 });
+                    "Page{pageNum}",
+                    new { Controller = "Home", action = "Index", pageNum = 1 });
 
-                endpoints.MapControllerRoute(
-                    name: "type",
-                    pattern: "{projectType}",
-                    defaults: new { Controller = "Home", action = "Index", pageNum = 1 });
+                endpoints.MapControllerRoute("type",
+                    "{projectType}",
+                    new { Controller = "Home", action = "Index", pageNum = 1 });
 
                 endpoints.MapDefaultControllerRoute();
             });
