@@ -26,20 +26,26 @@ namespace WaterProject2.Controllers
             repo = temp;
         }
 
-        public IActionResult Index(int pageNum = 1)
+        // add string projectType for filtering selections
+        public IActionResult Index(string projectType, int pageNum = 1)
         {
             int pageSize = 5;
 
             var x = new ProjectsViewModel
             {
                 Projects = repo.Projects
+                // searched with what ever link was passed in or if null
+                .Where(p => p.ProjectType == projectType | projectType == null)
                 .OrderBy(p => p.ProjectName)
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize),
 
                 PageInfo = new PageInfo
                 {
-                    TotalNumProjects = repo.Projects.Count(),
+                    // making a decision for pagination
+                    TotalNumProjects = (projectType == null
+                        ? repo.Projects.Count()
+                        : repo.Projects.Where(x => x.ProjectType == projectType).Count()),
                     ProjectsPerPage = pageSize,
                     CurrentPage = pageNum
                 }

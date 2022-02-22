@@ -19,6 +19,9 @@ namespace WaterProject2.Components
         // pull out data of distinct
         public IViewComponentResult Invoke()
         {
+            // ? means that it's okay if it's null
+            ViewBag.SelectedType = RouteData?.Values["projectType"];
+
             // based on a type of project
             var types = repo.Projects
                 .Select(x => x.ProjectType)
