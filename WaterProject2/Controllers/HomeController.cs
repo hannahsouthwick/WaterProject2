@@ -47,7 +47,5 @@ namespace WaterProject2.Controllers
 
             return View(x);
         }
-
-        // public IActionResult Index() => View();
     }
 }

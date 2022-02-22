@@ -22,7 +22,6 @@ namespace WaterProject2
             Configuration = temp;
         }
 
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -58,11 +57,17 @@ namespace WaterProject2
 
             app.UseAuthorization();
 
+            // changes here
+            // endpoints run from top to bottom like if statements
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    name: "Paging",
+                    // interpretting what comes in and creating what comes out, literal "P"
+                    pattern: "P{pageNum}",
+                    defaults: new { Controller = "Home", action = "Index" });
+
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }
