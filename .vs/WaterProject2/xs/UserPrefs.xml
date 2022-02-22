@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Components/TypesViewComponent.cs">
     <Files>
-      <File FileName="WaterProject2/Views/Shared/Components/Types/Default.cshtml" Line="10" Column="6" />
+      <File FileName="WaterProject2/Views/Shared/Components/Types/Default.cshtml" Line="15" Column="7" />
       <File FileName="WaterProject2/Controllers/HomeController.cs" Line="42" Column="1" />
       <File FileName="WaterProject2/Startup.cs" Line="71" Column="53" />
-      <File FileName="WaterProject2/Components/TypesViewComponent.cs" Line="32" Column="10" />
+      <File FileName="WaterProject2/Components/TypesViewComponent.cs" Line="17" Column="10" />
       <File FileName="WaterProject2/Views/Shared/_Layout.cshtml" Line="36" Column="39" />
       <File FileName="WaterProject2/Views/Shared/ProjectSummary.cshtml" Line="22" Column="7" />
       <File FileName="WaterProject2/Views/Home/Index.cshtml" Line="18" Column="45" />
@@ -14,12 +14,13 @@
         <State name="__root__">
           <Node name="WaterProject2" expanded="True">
             <Node name="WaterProject2" expanded="True">
-              <Node name="Components" expanded="True" />
+              <Node name="Components" expanded="True">
+                <Node name="TypesViewComponent.cs" selected="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
                     <Node name="Types" expanded="True" />
