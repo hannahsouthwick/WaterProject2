@@ -12,13 +12,6 @@ namespace WaterProject2.Controllers
 {
     public class HomeController : Controller
     {
-        //private WaterProjectContext context { get; set; }
-
-        //public HomeController (WaterProjectContext temp)
-        //{
-        //    context = temp;
-        //}
-
         private IWaterProjectRepository repo;
 
         public HomeController (IWaterProjectRepository temp)
@@ -35,7 +28,7 @@ namespace WaterProject2.Controllers
             {
                 Projects = repo.Projects
                 // searched with what ever link was passed in or if null
-                .Where(p => p.ProjectType == projectType | projectType == null)
+                .Where(p => p.ProjectType == projectType || projectType == null)
                 .OrderBy(p => p.ProjectName)
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize),

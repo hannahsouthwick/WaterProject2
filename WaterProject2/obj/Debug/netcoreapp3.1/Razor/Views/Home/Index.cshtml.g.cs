@@ -28,13 +28,20 @@ using WaterProject2.Models;
 #nullable disable
 #nullable restore
 #line 4 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Views/_ViewImports.cshtml"
+using WaterProject2.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Views/_ViewImports.cshtml"
 using WaterProject2.Models.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b671ce01a0bf5a92aa7e4941a50b910fd24e18b", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd8a45ceb702fc56766a6acda9d874e236d942ba", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0012a91d64aa4364a0f6e6d3627eec4b69e7e613", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ProjectsViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "ProjectSummary", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -95,7 +102,7 @@ Write(ViewBag.Calc);
 #line hidden
 #nullable disable
             WriteLiteral("    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2b671ce01a0bf5a92aa7e4941a50b910fd24e18b5996", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2b671ce01a0bf5a92aa7e4941a50b910fd24e18b6200", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -126,7 +133,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = p;
 #line hidden
 #nullable disable
             WriteLiteral("\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b671ce01a0bf5a92aa7e4941a50b910fd24e18b7747", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b671ce01a0bf5a92aa7e4941a50b910fd24e18b7951", async() => {
             }
             );
             __WaterProject2_Infrastructure_PaginationTagHelper = CreateTagHelper<global::WaterProject2.Infrastructure.PaginationTagHelper>();

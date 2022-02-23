@@ -34,6 +34,11 @@ namespace WaterProject2
            });
 
             services.AddScoped<IWaterProjectRepository, EFWaterProjectRepository>();
+
+            services.AddRazorPages();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +57,10 @@ namespace WaterProject2
 
             //Corresponds to the wwroot
             app.UseStaticFiles();
+
+            // session store, int, string, byte
+            app.UseSession();
+            app.UseRouting();
 
             app.UseRouting();
 
@@ -73,6 +82,8 @@ namespace WaterProject2
                     new { Controller = "Home", action = "Index", pageNum = 1 });
 
                 endpoints.MapDefaultControllerRoute();
+
+                endpoints.MapRazorPages();
             });
         }
     }
