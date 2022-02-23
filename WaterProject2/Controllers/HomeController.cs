@@ -19,7 +19,6 @@ namespace WaterProject2.Controllers
             repo = temp;
         }
 
-        // add string projectType for filtering selections
         public IActionResult Index(string projectType, int pageNum = 1)
         {
             int pageSize = 5;

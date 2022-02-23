@@ -1,29 +1,29 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Pages/Donate.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Infrastructure/UrlExtensions.cs">
     <Files>
-      <File FileName="WaterProject2/Startup.cs" Line="61" Column="48" />
-      <File FileName="WaterProject2/Infrastructure/SessionExtensions.cs" Line="11" Column="69" />
-      <File FileName="WaterProject2/Views/Shared/ProjectSummary.cshtml" Line="27" Column="90" />
-      <File FileName="WaterProject2/Pages/Donate.cshtml" Line="1" Column="1" />
-      <File FileName="WaterProject2/Pages/Donate.cshtml.cs" Line="23" Column="28" />
+      <File FileName="WaterProject2/Startup.cs" Line="24" Column="1" />
+      <File FileName="WaterProject2/Views/Shared/ProjectSummary.cshtml" Line="27" Column="99" />
+      <File FileName="WaterProject2/Infrastructure/UrlExtensions.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WaterProject2" expanded="True">
             <Node name="WaterProject2" expanded="True">
+              <Node name="Components" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Infrastructure" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="Donate.cshtml" expanded="True">
-                  <Node name="Donate.cshtml.cs" selected="True" />
-                </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="UrlExtensions.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True">
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
