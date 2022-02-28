@@ -21,6 +21,8 @@ namespace WaterProject2.Models
 
         public virtual DbSet<Project> Projects { get; set; }
 
+        // because we added a new model, we need to tell the migrations that this needs to be added
+        public DbSet<Donation> Donations { get; set; }
 
     }
 }

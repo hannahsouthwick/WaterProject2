@@ -1,9 +1,13 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Infrastructure/UrlExtensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Views/Donation/Checkout.cshtml">
     <Files>
-      <File FileName="WaterProject2/Startup.cs" Line="24" Column="1" />
-      <File FileName="WaterProject2/Views/Shared/ProjectSummary.cshtml" Line="27" Column="99" />
-      <File FileName="WaterProject2/Infrastructure/UrlExtensions.cs" Line="12" Column="1" />
+      <File FileName="WaterProject2/Startup.cs" Line="179" Column="7" IsPinned="True" />
+      <File FileName="WaterProject2/Pages/Donate.cshtml" Line="49" Column="23" />
+      <File FileName="WaterProject2/Models/Donation.cs" Line="30" Column="42" />
+      <File FileName="WaterProject2/Views/Checkout.cshtml" Line="53" Column="11" />
+      <File FileName="WaterProject2/Controllers/DonationController.cs" Line="42" Column="1" />
+      <File FileName="WaterProject2/Models/IDonationRepository.cs" Line="10" Column="46" />
+      <File FileName="WaterProject2/Models/EFDonationRepository.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,18 +16,21 @@
             <Node name="WaterProject2" expanded="True">
               <Node name="Components" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Infrastructure" expanded="True">
-                <Node name="UrlExtensions.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True">
-                <Node name="ViewModels" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Confirmation.cshtml" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Donation" expanded="True">
+                  <Node name="Checkout.cshtml" selected="True" />
+                </Node>
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

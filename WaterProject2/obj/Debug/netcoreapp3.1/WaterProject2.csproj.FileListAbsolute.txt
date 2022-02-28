@@ -80,3 +80,4 @@
 /Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/_DonateLayout.cshtml.g.cs
 /Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
 /Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Views/Donation/Checkout.cshtml.g.cs
