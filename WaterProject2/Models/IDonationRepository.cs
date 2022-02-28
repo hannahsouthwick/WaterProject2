@@ -5,7 +5,7 @@ namespace WaterProject2.Models
 {
     public interface IDonationRepository
     {
-        IQueryable<Donation> Donations { get; set; }
+        IQueryable<Donation> Donations { get; }
 
         void SaveDonation(Donation donation);
     }
