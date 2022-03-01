@@ -167,7 +167,7 @@ namespace WaterProject2
 //12---- Run migrations
 // if needed, delete the project migrations that creates the project table
 
-//13----- Create new Razor View Checkout.cshtml and place in Checkout Views Folder
+//13----- Create new Razor View Checkout.cshtml and place in Donation Views Folder
 
 //14---- Create new Controller class in controller folder
 
