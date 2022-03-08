@@ -120,3 +120,12 @@ namespace WaterProject2
 
 // 5-----
 // Add new razor component called AdminLayout.razor
+// Add new razor componenet called DonationTable.razor
+
+//6-----
+// add  to donations.cs model       [BindNever]
+// public bool DonationReceived { get; set; }
+
+//7---- run migrations
+// dotnet ef migrations add AddReceived field
+// dotnet ef database update

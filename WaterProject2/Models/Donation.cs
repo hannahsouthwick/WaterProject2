@@ -36,5 +36,8 @@ namespace WaterProject2.Models
 
         [Required(ErrorMessage = "Please select an option ")]
         public bool Anonymous { get; set; }
+
+        [BindNever]
+        public bool DonationReceived { get; set; }
     }
 }
