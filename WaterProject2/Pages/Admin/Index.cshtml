@@ -1,0 +1,24 @@
+﻿@page "/admin"
+@model WaterProject2.Pages.Admin.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Water Project Admin</title>
+    <link href="~/lib/css/bootstrap.min.css" rel="stylesheet" />
+    @*specifices the base URL and/or target for all relative URLs in a document*@
+    <base href="/" />
+</head>
+
+<body>
+    @*WaterProject2.Pages.Admin.Routed*@
+    <component type="typeof(Routed)" render-mode="Server" />
+    <script src="/_framework/blazor.server.js"></script>
+
+</body>
+
+</html>

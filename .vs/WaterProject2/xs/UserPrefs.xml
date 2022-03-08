@@ -1,30 +1,24 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Pages/Confirmation.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Pages/Admin/Index.cshtml">
     <Files>
-      <File FileName="WaterProject2/Pages/Confirmation.cshtml" />
-      <File FileName="WaterProject2/Pages/Confirmation.cshtml.cs" Line="1" Column="1" />
+      <File FileName="WaterProject2/Startup.cs" Line="120" Column="52" />
+      <File FileName="WaterProject2/Pages/Admin/Projects.razor" Line="8" Column="2" />
+      <File FileName="WaterProject2/Pages/Admin/Donations.razor" Line="1" Column="24" />
+      <File FileName="WaterProject2/Pages/Admin/Index.cshtml" Line="25" Column="8" />
+      <File FileName="WaterProject2/Pages/Admin/Routed.razor" Line="2" Column="1" />
+      <File FileName="WaterProject2/Pages/Admin/_Imports.razor" Line="7" Column="28" />
+      <File FileName="WaterProject2/Pages/Admin/AdminLayout.razor" Line="21" Column="15" />
+      <File FileName="WaterProject2/Pages/Admin/Index.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WaterProject2" expanded="True">
             <Node name="WaterProject2" expanded="True">
-              <Node name="Components" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Infrastructure" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Confirmation.cshtml" expanded="True" selected="True" />
-                <Node name="Donate.cshtml" expanded="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Donation" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
-                <Node name="lib" expanded="True" />
+                <Node name="Admin" expanded="True">
+                  <Node name="Index.cshtml" expanded="True" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -82,3 +82,17 @@
 /Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Views/Donation/Checkout.cshtml.g.cs
 /Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Confirmation.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/WaterProject2.RazorComponent.input.cache
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Donations.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Projects.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/WaterProject2.RazorComponent.output.cache
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/RazorDeclaration/WaterProject2.dll
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Donations.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Projects.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/AdminLayout.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Routed.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/_Imports.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminLayout.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Routed.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/_Imports.razor.g.cs
+/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Index.cshtml.g.cs
