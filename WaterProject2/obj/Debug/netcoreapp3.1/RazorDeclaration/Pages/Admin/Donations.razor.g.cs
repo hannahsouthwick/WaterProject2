@@ -53,7 +53,7 @@ using WaterProject2.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/projects")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/donations")]
     public partial class Donations : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
