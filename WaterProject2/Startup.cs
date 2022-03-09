@@ -101,7 +101,7 @@ namespace WaterProject2
     }
 }
 
-
+// All Admin Pages new in Admin Folder
 // To Add:
 // 1-----
 // Add admin folder to Pages and add projects.razor and donations.razor
@@ -129,3 +129,17 @@ namespace WaterProject2
 //7---- run migrations
 // dotnet ef migrations add AddReceived field
 // dotnet ef database update
+
+//8 -----
+// to IWaterProjectRepository add in interface
+//public void SaveProject(Project p);
+//public void CreateProject(Project p);
+//public void DeleteProject(Project p);
+
+//9 -------
+// to EFWaterProjectRepository,
+// implement interface on error of IWaterProjectRepository
+// update public voids for save, update, and delete
+
+// 10------
+// Add new razor component called details.razor

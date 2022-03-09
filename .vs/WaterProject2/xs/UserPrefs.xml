@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Pages/Admin/Donations.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Models/Projects.cs">
     <Files>
-      <File FileName="WaterProject2/Startup.cs" Line="123" Column="55" />
-      <File FileName="WaterProject2/Pages/Admin/Donations.razor" Line="4" Column="106" />
-      <File FileName="WaterProject2/Pages/Admin/AdminLayout.razor" />
-      <File FileName="WaterProject2/Pages/Admin/Index.cshtml.cs" />
-      <File FileName="WaterProject2/Models/Donation.cs" Line="40" Column="1" />
-      <File FileName="WaterProject2/Pages/Admin/DonationTable.razor" Line="16" Column="37" />
+      <File FileName="WaterProject2/Startup.cs" Line="145" Column="48" />
+      <File FileName="WaterProject2/Pages/Admin/DonationTable.razor" Line="4" Column="45" />
+      <File FileName="WaterProject2/Pages/Admin/Projects.razor" Line="52" Column="1" />
+      <File FileName="WaterProject2/Pages/Admin/Routed.razor" Line="13" Column="1" />
+      <File FileName="WaterProject2/Pages/Admin/Details.razor" Line="27" Column="1" />
+      <File FileName="WaterProject2/Pages/Admin/Editor.razor" Line="60" Column="1" />
+      <File FileName="WaterProject2/Models/Projects.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WaterProject2" expanded="True">
             <Node name="WaterProject2" expanded="True">
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Projects.cs" selected="True" />
+              </Node>
               <Node name="Pages" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Donations.razor" selected="True" />
-                </Node>
+                <Node name="Admin" expanded="True" />
               </Node>
             </Node>
           </Node>

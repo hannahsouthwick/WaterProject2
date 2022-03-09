@@ -53,9 +53,9 @@ using WaterProject2.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/projects")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/admin")]
-    public partial class Projects : OwningComponentBase<IWaterProjectRepository>
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/projects/edit/{id:long}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/projects/create")]
+    public partial class Editor : OwningComponentBase<IWaterProjectRepository>
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -63,30 +63,41 @@ using WaterProject2.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 53 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Pages/Admin/Projects.razor"
+#line 64 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Pages/Admin/Editor.razor"
        
+
+    [Parameter]
+    public long Id { get; set; } = 0;
+
+    public string ThemeColor => Id == 0 ? "primary" : "warning";
+    public string TitleText => Id == 0 ? "Create" : "Edit";
+
+    public Project p { get; set; } = new Project();
+
     public IWaterProjectRepository repo => Service;
 
-    public IEnumerable<Project> ProjectData { get; set; }
-
-    protected async override Task OnInitializedAsync()
+    protected override void OnParametersSet()
     {
-        await UpdateData();
+        if (Id !=0) //Existing
+        {
+            p = repo.Projects.FirstOrDefault(x => x.ProjectId == Id);
+        }
     }
 
-    public string GetDetailsUrl(long id) => $"/admin/projects/details/{id}";
-    public string GetEditUrl(long id) => $"/admin/projects/edit/{id}";
-
-    public async Task RemoveProject (Project p)
+    public void SaveProject()
     {
-        repo.DeleteProject(p);
-        await UpdateData();
+        if (Id == 0) //New
+        {
+            repo.CreateProject(p);
+        }
+        else
+        {
+            repo.SaveProject(p);
+        }
     }
 
-    public async Task UpdateData()
-    {
-        ProjectData = await repo.Projects.ToListAsync();
-    }
+    [Inject]
+    public NavigationManager NavManager { get; set; }
 
 #line default
 #line hidden
