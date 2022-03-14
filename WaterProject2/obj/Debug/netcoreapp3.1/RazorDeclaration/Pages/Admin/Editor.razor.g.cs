@@ -63,7 +63,7 @@ using WaterProject2.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 64 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Pages/Admin/Editor.razor"
+#line 61 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Pages/Admin/Editor.razor"
        
 
     [Parameter]
@@ -94,6 +94,8 @@ using WaterProject2.Models;
         {
             repo.SaveProject(p);
         }
+
+        NavManager.NavigateTo("/admin/projects");
     }
 
     [Inject]

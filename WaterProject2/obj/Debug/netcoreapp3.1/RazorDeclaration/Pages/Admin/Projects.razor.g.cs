@@ -63,7 +63,7 @@ using WaterProject2.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 53 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Pages/Admin/Projects.razor"
+#line 55 "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/Pages/Admin/Projects.razor"
        
     public IWaterProjectRepository repo => Service;
 

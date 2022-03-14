@@ -1,24 +1,29 @@
 ﻿<Properties StartupConfiguration="{ABF904D4-5292-4D1B-9731-90C748D4EE3D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Models/Projects.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaterProject2/Pages/Admin/Donations.razor">
     <Files>
-      <File FileName="WaterProject2/Startup.cs" Line="145" Column="48" />
-      <File FileName="WaterProject2/Pages/Admin/DonationTable.razor" Line="4" Column="45" />
-      <File FileName="WaterProject2/Pages/Admin/Projects.razor" Line="52" Column="1" />
-      <File FileName="WaterProject2/Pages/Admin/Routed.razor" Line="13" Column="1" />
-      <File FileName="WaterProject2/Pages/Admin/Details.razor" Line="27" Column="1" />
-      <File FileName="WaterProject2/Pages/Admin/Editor.razor" Line="60" Column="1" />
-      <File FileName="WaterProject2/Models/Projects.cs" Line="25" Column="1" />
+      <File FileName="WaterProject2/Startup.cs" Line="127" Column="16" />
+      <File FileName="WaterProject2/Pages/Admin/Details.razor" />
+      <File FileName="WaterProject2/Pages/Admin/Editor.razor" />
+      <File FileName="WaterProject2/Models/Donation.cs" />
+      <File FileName="WaterProject2/Pages/Admin/Donations.razor" Line="43" Column="1" />
+      <File FileName="WaterProject2/Models/EFDonationRepository.cs" />
+      <File FileName="WaterProject2/Pages/Admin/DonationTable.razor" />
+      <File FileName="WaterProject2/Migrations/WaterProjectContextModelSnapshot.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WaterProject2" expanded="True">
             <Node name="WaterProject2" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Projects.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20220308181257_AddReceivedField.cs" expanded="True" />
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Admin" expanded="True" />
+                <Node name="Admin" expanded="True">
+                  <Node name="Donations.razor" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
