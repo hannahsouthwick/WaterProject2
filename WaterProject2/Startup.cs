@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +34,15 @@ namespace WaterProject2
            {
                options.UseSqlite(Configuration["ConnectionStrings:WaterDBConnection"]);
            });
+
+            services.AddDbContext<AppIdentityDBContext>(options =>
+
+            {
+                options.UseSqlite(Configuration["ConnectionStrings:IdentityConnection"]);
+            });
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDBContext>();
 
             services.AddScoped<IWaterProjectRepository, EFWaterProjectRepository>();
             services.AddScoped<IDonationRepository, EFDonationRepository>();
@@ -69,7 +79,9 @@ namespace WaterProject2
             app.UseSession();
             app.UseRouting();
 
-            app.UseRouting();
+            //middleware
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             // changes here
             // endpoints run from top to bottom like if statements
@@ -101,45 +113,28 @@ namespace WaterProject2
     }
 }
 
-// All Admin Pages new in Admin Folder
-// To Add:
-// 1-----
-// Add admin folder to Pages and add projects.razor and donations.razor
-//
-// 2----
-// Add " services.AddServerSideBlazor(); " to startup.cs
-// and  endpoints.MapBlazorHub();
-//      endpoints.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
+// install core.identity.frameworkcore package
+// 3.1.22
 
-// 3-----
-// Add Index.cshtml with page model to admin
+// add new class to models folder
 
-// 4-----
-// Add new razor component called routed
-// add new razor component called _Imports.razor
+// In appsettings.json add new connection string
 
-// 5-----
-// Add new razor component called AdminLayout.razor
-// Add new razor componenet called DonationTable.razor
+// in startup.cs add:
+//services.AddDbContext<AppIdentityDBContext>(options =>
 
-//6-----
-// add  to donations.cs model       [BindNever]
-// public bool DonationReceived { get; set; }
+//{
+//    options.UseSqlite(Configuration["ConnectionStrings:IdentityConnection"]);
+//});
 
-//7---- run migrations
-// dotnet ef migrations add AddReceived field
-// dotnet ef database update
+//services.AddIdentity<IdentityUser, IdentityRole>()
+//    .AddEntityFrameworkStores<AppIdentityDBContext>();
 
-//8 -----
-// to IWaterProjectRepository add in interface
-//public void SaveProject(Project p);
-//public void CreateProject(Project p);
-//public void DeleteProject(Project p);
+// and also
+////middleware
+//app.UseAuthentication();
+//app.UseAuthorization();
 
-//9 -------
-// to EFWaterProjectRepository,
-// implement interface on error of IWaterProjectRepository
-// update public voids for save, update, and delete
-
-// 10------
-// Add new razor component called details.razor
+//migrations
+//dotnet ef migrations add IdentitySetup --context AppIdentityDbContext
+//dotnet ef database update --context AppIdentityDbContext

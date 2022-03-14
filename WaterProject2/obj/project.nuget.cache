@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KJn7QRFgfa9aud1Epz6z6AI5O3G4eVDumzVSvghEd+NFqKLMBtqSIOSLo8mWiSfEd8gW+wLlLyovIO2JI+zbJg==",
+  "dgSpecHash": "lnBHVZjO5tY0QT6pHXeKJ24o66JpWcxUWylFepXHMphPLCjUAwbceCrUtUa/q7RjHqmjDzcDo4qhTenmRBmX5g==",
   "success": true,
   "projectFilePath": "/Users/hannahsouthwick/Documents/GitHub/WaterProject2/WaterProject2/WaterProject2.csproj",
   "expectedPackageFiles": [
     "/Users/hannahsouthwick/.nuget/packages/bootstrap/5.1.3/bootstrap.5.1.3.nupkg.sha512",
+    "/Users/hannahsouthwick/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.22/microsoft.aspnetcore.cryptography.internal.3.1.22.nupkg.sha512",
+    "/Users/hannahsouthwick/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.22/microsoft.aspnetcore.cryptography.keyderivation.3.1.22.nupkg.sha512",
+    "/Users/hannahsouthwick/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/3.1.22/microsoft.aspnetcore.identity.entityframeworkcore.3.1.22.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -26,6 +29,8 @@
     "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.22/microsoft.extensions.dependencyinjection.3.1.22.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.22/microsoft.extensions.dependencyinjection.abstractions.3.1.22.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.identity.core/3.1.22/microsoft.extensions.identity.core.3.1.22.nupkg.sha512",
+    "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.identity.stores/3.1.22/microsoft.extensions.identity.stores.3.1.22.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.logging/3.1.22/microsoft.extensions.logging.3.1.22.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.22/microsoft.extensions.logging.abstractions.3.1.22.nupkg.sha512",
     "/Users/hannahsouthwick/.nuget/packages/microsoft.extensions.options/3.1.22/microsoft.extensions.options.3.1.22.nupkg.sha512",
