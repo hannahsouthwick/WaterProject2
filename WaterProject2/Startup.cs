@@ -109,6 +109,8 @@ namespace WaterProject2
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
             });
+
+            IdentitySeedData.EnsurePopulated(app);
         }
     }
 }
@@ -136,5 +138,41 @@ namespace WaterProject2
 //app.UseAuthorization();
 
 //migrations
-//dotnet ef migrations add IdentitySetup --context AppIdentityDbContext
-//dotnet ef database update --context AppIdentityDbContext
+//dotnet ef migrations add IdentitySetup --context AppIdentityDbContext --project 'WaterProject2'
+//dotnet ef database update --context AppIdentityDbContext --project 'WaterProject2'
+
+// add new class in models
+//IdentitySeedData.cs
+
+// add IdentitySeedData.EnsurePopulated(app); to the end
+
+// create model in viewmodels folder called LoginModel
+
+// create new "ACCOUNT" folder in the views folder
+// --- inside create new razor view called login.cshtml
+
+// add controller in the controllers folder called AccountController.cs
+
+// to the index.cshtml page inside admin folder of pages add
+//@using Microsoft.AspNetCore.Authorization
+//@attribute[Authorize]
+
+// to adminlayout, update nav bar with
+//< div class= "bg-info text-white p-2" >
+ 
+//     < div class= "container-fluid" >
+  
+
+//          < div class= "col" >
+   
+//               < span class= "navbar-brand m-lg-2" > Water Project Administration</span>
+//               </div>
+
+//        <div class= "col-2 text-right" >
+//            < a class= "btn tbn-sm btn-primary" href = "/account/logout" > Log Out </ a >
+      
+
+//              </ div >
+      
+//          </ div >
+//      </ div >
